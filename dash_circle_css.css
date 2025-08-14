@@ -97,7 +97,7 @@ body {
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
-    font-weight: 600;
+    font-weight:600;
     color: #731C3E;
     line-height: 150%;
     letter-spacing: 0.5px;
@@ -151,36 +151,39 @@ body {
 
 /* About Section */
 .about {
-    padding: 100px 20px;
-    background: white;
+    padding: 150px 150px;
+    background: #FFEEF7;
     text-align: center;
 }
 
 .about-text {
-    font-size: 1.4rem;
-    line-height: 1.8;
-    color: #666;
+    font-size: 2.625rem;
+    line-height: 150%;
+    color: rgba(119, 51, 78, 0.3);
     max-width: 800px;
     margin: 0 auto;
     font-weight: 400;
+    font-style: italic;
+    font-weight: bold;
+
 }
 
 .brand-name {
     font-family: 'Playfair Display', serif;
-    color: #8B4B6B;
-    font-weight: 700;
+    color: #731C3E;
+    font-weight: 600;
     font-style: italic;
 }
 
 .highlight {
     color: #8B4B6B;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* Programs Section */
 .programs {
     padding: 100px 20px;
-    background: #FFF8F8;
+    background: #FFEEF7;
 }
 
 .program-item {
@@ -345,7 +348,7 @@ body {
     }
     
     .hero-title {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {
