@@ -20,7 +20,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 /* Header Styles */
@@ -151,7 +151,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 150px 150px;
+    padding: 100px 100px;
     background: #FFEEF7;
     text-align: center;
 }
@@ -182,16 +182,15 @@ body {
 
 /* Programs Section */
 .programs {
-    padding: 100px 0px;
-    /* margin: 200px 200px; */
-    align-items: center;
-    background: #303030;
+    padding: 40px 0px;
+    margin: 40px 100px;
+    /* background: #303030; */
 }
 
 .program-item {
     display: flex;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
     gap: 60px;
 }
 
@@ -205,7 +204,7 @@ body {
 }
 
 .program-image img {
-    width: 470px;
+    width: 100%;
     height: 470px;
     object-fit: cover;
     border-radius: 15px;
@@ -364,7 +363,7 @@ body {
     }
     
     .newsletter-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .form-group {
@@ -378,7 +377,7 @@ body {
     }
     
     .about-text {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
     
     .program-description {
@@ -388,7 +387,77 @@ body {
     .programs,
     .about,
     .newsletter {
-        padding: 60px 20px;
+        padding: 80px 0px;
+    }
+
+    /* Mobile-only refinements */
+    .brand-logo {
+        height: 48px;
+    }
+
+    .programs {
+        margin: 10px 0; /* remove large desktop side margins on phones */
+    }
+
+    .program-item,
+    .program-item.reverse {
+        gap: 28px; /* tighter spacing between image and text */
+        text-align: center;
+    }
+
+    .program-image {
+        max-width: 100%;
+    }
+
+    .program-image img {
+        width: 100%;
+        height: auto; /* avoid hard-cropped images */
+        border-radius: 20px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .program-content {
+        max-width: 650px;
+        margin: 0 auto; /* center content */
+        padding: 0 8px; /* comfortable side padding */
     }
 }
 
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.1rem;
+        line-height: 1.25;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+
+    .program-title {
+        font-size: 1.5rem;
+    }
+
+    .program-description {
+        font-size: 0.975rem;
+    }
+
+    .program-item {
+        margin-bottom: 28px;
+    }
+
+    .program-image img {
+        border-radius: 18px;
+    }
+
+    .newsletter-title {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
