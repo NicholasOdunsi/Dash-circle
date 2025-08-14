@@ -182,8 +182,10 @@ body {
 
 /* Programs Section */
 .programs {
-    padding: 100px 20px;
-    background: #FFEEF7;
+    padding: 100px 0px;
+    /* margin: 200px 200px; */
+    align-items: center;
+    background: #303030;
 }
 
 .program-item {
@@ -203,8 +205,8 @@ body {
 }
 
 .program-image img {
-    width: 100%;
-    height: 350px;
+    width: 470px;
+    height: 470px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -217,18 +219,19 @@ body {
 
 .program-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #8B4B6B;
+    font-size: 2rem;
+    color: #731C3E;
     margin-bottom: 25px;
     font-weight: 700;
     line-height: 1.2;
+    font-style: italic;
 }
 
 .program-description {
     font-size: 1.1rem;
-    color: #666;
+    color: rgb(115, 28, 62, 0.8);
     line-height: 1.7;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* Newsletter Section */
