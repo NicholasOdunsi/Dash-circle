@@ -220,7 +220,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #731C3E;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
     font-weight: 700;
     line-height: 1.2;
     font-style: italic;
@@ -478,7 +478,7 @@ body {
 
     .program-item,
     .program-item.reverse {
-        gap: 28px; /* tighter spacing between image and text */
+        gap: 32px; /* tighter spacing between image and text */
         text-align: center;
     }
 
