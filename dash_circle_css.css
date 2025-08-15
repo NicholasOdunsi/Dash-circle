@@ -235,7 +235,7 @@ body {
 
 /* Newsletter Section */
 .newsletter {
-    padding: 20px 20px;
+    padding: 56px 20px;
     /* background: linear-gradient(135deg, #FFE4E1 0%, #FFC0CB 100%); */
     text-align: center;
 }
@@ -306,17 +306,72 @@ body {
 
 /* Footer */
 .footer {
-    padding: 60px 20px;
+    padding: 32px 12px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(255, 152, 208, 1) 0%, rgba(255, 152, 208, 1) 50%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    /* margin-bottom: 32px; */
+    position: relative;
+    z-index: 2;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(115, 28, 62, 0.2);
+}
+
+.social-icon:hover {
+    background: #fdcbe4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(115, 28, 62, 0.4);
+}
+
+.social-icon i {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
 }
 
 .footer-title {
     font-family: 'Playfair Display', serif;
-    font-size:6rem;
+    font-size: 7rem;
     color: #731C3E;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 3px;
     font-style: italic;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(115, 28, 62, 0.1);
 }
 
 /* Responsive Design */
@@ -373,8 +428,29 @@ body {
     }
     
     .footer-title {
-        font-size: 2.5rem;
-        letter-spacing: 1px;
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+    
+    .footer::before {
+        width: 400px;
+        height: 400px;
+        filter: blur(30px);
+    }
+    
+    .social-icons {
+        gap: 20px;
+        margin-bottom: 24px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
     }
     
     .about-text {
@@ -460,5 +536,32 @@ body {
 
     .submit-button {
         width: 100%;
+    }
+    
+    .footer-title {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .footer::before {
+        width: 300px;
+        height: 300px;
+        top: 150%;
+        filter: blur(25px);
+    }
+    
+    .social-icons {
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-icon svg {
+        width: 16px;
+        height: 16px;
     }
 }
