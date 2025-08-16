@@ -121,7 +121,7 @@ body {
     background: #731C3E;
     color: white;
     border: none;
-    padding: 14px 40px;
+    padding: 12px 32px;
     font-size: 1rem;
     font-weight: 700;
     border-radius: 9999px;
@@ -508,6 +508,9 @@ body {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+    .cta-button{
+        padding: 8px 24px;
     }
 
     .about-text {
