@@ -73,7 +73,7 @@ body {
     align-items: start;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(255, 152, 208, 0.20), rgba(255, 152, 208, 0.20)), url('assets/hero.jpg');
+    background-image: linear-gradient(rgba(29, 29, 29, 0.2), rgba(255, 152, 208, 0.50)), url('assets/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ body {
     font-size: 6rem;
     font-weight:600;
     color: #731C3E;
-    line-height: 150%;
+    line-height: 120%;
     letter-spacing: 0.5px;
     text-align: center;
     margin-bottom: 24px;
@@ -111,7 +111,7 @@ body {
     color: #ffffff;
     margin-bottom: 18px;
     line-height: 150%;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
@@ -128,7 +128,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Nunito', sans-serif;
-    box-shadow: 0 8px 24px rgba(115, 28, 62, 0.28);
+    /* box-shadow: 0 8px 24px rgba(115, 28, 62, 0.28); */
 }
 
 .cta-button:hover {
@@ -502,12 +502,13 @@ body {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
         line-height: 1.25;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     .cta-button{
         padding: 8px 24px;
