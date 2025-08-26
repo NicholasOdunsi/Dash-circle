@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 delete window[callbackName];
                 
                 if (response && response.success) {
-                    alert('Thank you' + (nameVal ? ', ' + nameVal : '') + '! You\'re a member of the circle.');
+                    alert('Thank you' + (nameVal ? ', ' + nameVal : '') + '! You\'re have become a member of the circle.');
                     form.reset();
                 } else {
                     alert('There was an error submitting your information. Please try again.');
